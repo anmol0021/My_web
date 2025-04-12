@@ -144,45 +144,67 @@
   }
 
   @media (max-width: 768px) {
+    /* Stack navbar items vertically */
     .navbar {
       flex-direction: column;
       align-items: center;
-      gap: 1rem; /* Add spacing between stacked items */
+      gap: 1rem;
+    }
+  
+    /* Make top-right links flow below header to avoid overlap */
+    .top-right-links {
+      position: static;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+  
+    .link-item {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    .link-item::after {
+      display: none; /* Optional: hide "Available Soon" text on small screens */
+    }
+  
+    /* Stack hero content vertically */
+    header.hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .top-left-image {
+      margin-bottom: 1rem;
     }
   
     .top-left-image img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 1rem; /* Space between image and text */
-    }
-  
-    .hero-text {
-      text-align: center;
+      width: 120px;
+      height: 120px;
     }
   
     .hero-text h1 {
       font-size: 1.8rem;
     }
   
-    .hero-text p {
+    .hero-text p,
+    .details {
       font-size: 1rem;
     }
   
-    .details {
-      font-size: 0.95rem;
-      text-align: center;
-    }
-  
-    .top-right-links {
-      top: 10px;
-      right: 10px;
-      gap: 0.5rem;
+    .details p {
+      justify-content: center;
     }
   
     section {
       padding: 2rem 1rem;
     }
   }
+  
   
   .top-left-image img {
     width: 250px;
