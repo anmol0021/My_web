@@ -1,11 +1,69 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <header class="hero">
+    <div class="top-left-image">
+      <img src="/Images/pic01.jpg" alt="Anmol's Profile Photo" />
+    </div>
+    <div class="hero-text">
+      <h1>Anmol Mittal </h1>
+      <div class="details">
+		<p>
+		  <!-- College Building Icon -->
+		  <svg class="icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+			<path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zM3 10.18V17h2v-5.82L3 10.18z"/>
+		  </svg>
+		  <span>Indian Institute of Science</span>
+		</p>
+		<p>
+		  <!-- Location Pin Icon -->
+		  <svg class="icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+			<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+		  </svg>
+		  <span>Bangalore, karnataka-560012</span>
+		</p>
+	  </div>
+	  
+    </div>
+
+  </header>
+
+  <div class="top-right-links">
+    <a href="/blog/" class="link-item">Blog</a>
+    <a href="/projects/" class="link-item">Projects</a>
+  </div>
+
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p> I am a Junior Undergrad pursuing Mathematics and Computing at the Indian Institute of Science in Bengaluru. I enjoy both teaching, like through volunteering or by leading student-club activities, and also exploring the pedagogical implications of my work. When I was in my high School, I used to focus on learning multiple programming languages. I am a great Physics enthusiast too. </p>
+	<p> Just an Interesting FACT to share with you all is that "Rust is written in Rust but Python is written in C. Isn't it interesting? "</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      To be out soon
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: anmolmittal@iisc.ac.in</p>
+    <p>Contact: +91-9569823399</p>
+  </section>
+
+  <section id="social">
+	<h2>Social</h2>
+	<p>Out soon</p>
+  </section>
+
+</BaseLayout>
+
