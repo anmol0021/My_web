@@ -145,21 +145,45 @@
 
   @media (max-width: 768px) {
     .navbar {
-      flex-direction: column; /* Stack navbar items vertically */
+      flex-direction: column;
       align-items: center;
+      gap: 1rem; /* Add spacing between stacked items */
     }
   
     .top-left-image img {
-      width: 120px;
-      height: 120px; /* Adjust image size for smaller screens */
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem; /* Space between image and text */
+    }
+  
+    .hero-text {
+      text-align: center;
     }
   
     .hero-text h1 {
-      font-size: 2rem; /* Adjust font size for smaller screens */
+      font-size: 1.8rem;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  
+    .details {
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  
+    .top-right-links {
+      top: 10px;
+      right: 10px;
+      gap: 0.5rem;
+    }
+  
+    section {
+      padding: 2rem 1rem;
     }
   }
   
-
   .top-left-image img {
     width: 250px;
     height: 280px;
