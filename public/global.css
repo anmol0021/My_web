@@ -310,8 +310,87 @@
   }
   
   .link-item::after {
-    content: ' - Available Soon';
+    
     font-size: 0.9rem;
     color: #888;
   }
   
+.projects-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.project-summary {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #00cccc;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.social-links img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1); /* Makes icons white on dark bg */
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
